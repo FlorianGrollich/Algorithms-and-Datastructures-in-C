@@ -4,8 +4,8 @@
 typedef enum {
     FALSE,
     TRUE
-} bool;
+} boolean;
 
-int twoCrystalBalls(const bool breaks[]);
+int twoCrystalBalls(const boolean breaks[], const int length);
 
 #endif //ALGODATA_TWOCRYSTALBALLS_H
