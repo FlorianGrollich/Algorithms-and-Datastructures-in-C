@@ -1,8 +1,8 @@
 #include "binarySearch.h"
 
-int BinarySearch(const int* haystack, const int needle) {
+int BinarySearch(const int* haystack, int size, const int needle) {
     int lo = 0; //lower bound of search space
-    int hi = sizeof(haystack); //higher bound of search space
+    int hi = size - 1; //higher bound of search space
 
     do {
         const int m = lo + (hi - lo) / 2; // middle index of current search space (if even number it's the lower one)
