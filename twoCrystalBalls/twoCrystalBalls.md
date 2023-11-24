@@ -11,7 +11,7 @@ Examples:
 [false, false, false] => -1 //there is no height
 ```
 
-## Solution
+## Solution implementation
 
 1. go through array in sqrt(len(array))
 2. if true value found go back to previous index
