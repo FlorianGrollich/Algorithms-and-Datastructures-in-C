@@ -3,4 +3,6 @@ project(AlgoData C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(AlgoData main.c)
+add_executable(AlgoData
+        BinarySearch/binarySearch.c
+        BinarySearch/binarySearch.h)
