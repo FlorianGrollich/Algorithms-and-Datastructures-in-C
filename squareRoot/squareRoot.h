@@ -1,8 +1,6 @@
-//
-// Created by F-Gro on 24.11.2023.
-//
-
 #ifndef SQUAREROOT_H
 #define SQUAREROOT_H
+
+double squareRoot(double number);
 
 #endif //SQUAREROOT_H
