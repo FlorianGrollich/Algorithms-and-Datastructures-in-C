@@ -7,4 +7,6 @@ add_executable(AlgoData
         BinarySearch/binarySearch.c
         BinarySearch/binarySearch.h
         twoCrystalBalls/twoCrystalBalls.c
-        twoCrystalBalls/twoCrystalBalls.h)
+        twoCrystalBalls/twoCrystalBalls.h
+        squareRoot/squareRoot.c
+        squareRoot/squareRoot.h)

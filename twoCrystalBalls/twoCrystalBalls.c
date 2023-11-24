@@ -1,5 +1,9 @@
-//
-// Created by F-Gro on 24.11.2023.
-//
-
 #include "twoCrystalBalls.h"
+#include "../squareRoot/squareRoot.h"
+
+int twoCrystalBalls(const bool breaks[]) {
+
+
+
+    return -1; //no value was true
+}
