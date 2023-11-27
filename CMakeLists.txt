@@ -8,4 +8,6 @@ add_executable(AlgoData
         BubbleSort/bubbleSort.c
         BubbleSort/bubbleSort.h
         BinarySearch/binarySearch.h
-        BinarySearch/binarySearch.c)
+        BinarySearch/binarySearch.c
+        LinkedList/linkedList.c
+        LinkedList/linkedList.h)
