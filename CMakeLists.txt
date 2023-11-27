@@ -10,4 +10,5 @@ add_executable(AlgoData
         BinarySearch/binarySearch.h
         BinarySearch/binarySearch.c
         LinkedList/linkedList.c
+        LinkedList/linkedList.h
         LinkedList/linkedList.h)
