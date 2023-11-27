@@ -6,6 +6,7 @@ This repo is to learn about algorithms and datastructures while implementing the
 
 ### Algorithms
 [Binary search](https://github.com/FlorianGrollich/Algorithms-and-Datastructures-in-C/tree/main/BinarySearch) <br>
-[Two Crystal Balls](https://github.com/FlorianGrollich/Algorithms-and-Datastructures-in-C/tree/main/twoCrystalBalls)
+[Two Crystal Balls](https://github.com/FlorianGrollich/Algorithms-and-Datastructures-in-C/tree/main/twoCrystalBalls) <br>
+[Bubble sort](https://github.com/FlorianGrollich/Algorithms-and-Datastructures-in-C/tree/main/BubbleSort)
 
 ### Data Structures
