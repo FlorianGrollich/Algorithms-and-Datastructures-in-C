@@ -4,9 +4,8 @@ project(AlgoData C)
 set(CMAKE_C_STANDARD 23)
 
 add_executable(AlgoData
-        BinarySearch/binarySearch.c
+
+        BubbleSort/bubbleSort.c
+        BubbleSort/bubbleSort.h
         BinarySearch/binarySearch.h
-        twoCrystalBalls/twoCrystalBalls.c
-        twoCrystalBalls/twoCrystalBalls.h
-        squareRoot/squareRoot.c
-        squareRoot/squareRoot.h)
+        BinarySearch/binarySearch.c)
