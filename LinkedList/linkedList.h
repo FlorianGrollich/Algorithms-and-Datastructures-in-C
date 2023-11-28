@@ -18,4 +18,6 @@ void remove(struct Node head);
 
 int size(struct Node head);
 
+int atIndex(struct Node* head, int index, int* outValue);
+
 #endif //LINKEDLIST_H
