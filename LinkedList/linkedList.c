@@ -1,6 +1,5 @@
 #include "linkedList.h"
 
-#include <signal.h>
 #include <stdlib.h>
 
 struct Node* createNode(int value) {
@@ -23,7 +22,7 @@ void add(struct Node* head, const int value) {
 }
 
 
-int atIndex(struct Node* head, const int index, int* outValue) {
+int atIndex(const struct Node* head, const int index, int* outValue) {
     for (int i = 0; i < index; i++) {
         if (head->next == NULL) {
             return -1; // error
