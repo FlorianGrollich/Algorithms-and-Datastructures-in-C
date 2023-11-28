@@ -10,7 +10,7 @@ struct Node* createNode(int value);
 
 void insertAt(struct Node head, int value, int index);
 
-void add(struct Node head, int value);
+void add(struct Node* head, int value);
 
 void removeAt(struct Node head, int index);
 
