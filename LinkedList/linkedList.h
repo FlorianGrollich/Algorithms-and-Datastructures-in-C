@@ -1,18 +1,20 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
-
+#define NULL (void*)0
 struct Node {
     int value;
     struct Node* next;
 };
 
-void insertAt(int value, int index);
+struct Node* createNode(int value);
 
-void add(int value);
+void insertAt(struct Node head, int value, int index);
 
-void removeAt(int index);
+void add(struct Node head, int value);
 
-void remove();
+void removeAt(struct Node head, int index);
+
+void remove(struct Node head);
 
 int size(struct Node head);
 
