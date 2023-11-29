@@ -9,9 +9,9 @@ struct Node {
 
 struct Node* createNode(int value);
 
-const struct Node* getNodeAtIndex(const struct Node* head, const int index);
+struct Node* getNodeAtIndex(const struct Node* head, const int index);
 
-void insertAt(struct Node head, int value, int index);
+const struct Node* insertAt(const struct Node* node, const int value, const int index);
 
 void add(struct Node* head, int value);
 

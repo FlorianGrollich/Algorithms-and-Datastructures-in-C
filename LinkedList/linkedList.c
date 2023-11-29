@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 
-const struct Node* getNodeAtIndex(const struct Node* head, const int index) {
+struct Node* getNodeAtIndex(struct Node* head, const int index) {
     for (int i = 0; i < index; i++) {
         if (head->next == NULL) {
             return nullptr;
@@ -67,11 +67,34 @@ void printList(const struct Node* node) {
         node = node->next;
     }
 }
+
+const struct Node* insertAt(struct Node* node, const int value, const int index) {
+    if (index < 0) return nullptr;
+    if (node == NULL) return nullptr;
+
+    struct Node* before = getNodeAtIndex(node, index - 1);
+    if (before == nullptr) return nullptr;
+
+    struct Node* newNode = createNode(value);
+
+    if (index == 0) {
+        newNode->next = node;
+        return newNode;
+    }
+
+    newNode->next = before->next;
+    before->next = newNode;
+    return node;
+}
+
 int main() {
     struct Node* node = createNode(1);
+    add(node, 2);
+    add(node, 3);
     add(node, 4);
-    add(node, 4);
-    add(node, 4);
-    add(node, 4);
+    add(node, 5);
+    printList(node);
+    printf("\n");
+    insertAt(node, 8, 0);
     printList(node);
 }
