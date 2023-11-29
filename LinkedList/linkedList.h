@@ -16,7 +16,7 @@ void removeAt(struct Node head, int index);
 
 void removeNode(struct Node head);
 
-int size(struct Node head);
+int size(struct Node* head);
 
 int atIndex(const struct Node* head, int index, int* outValue);
 
