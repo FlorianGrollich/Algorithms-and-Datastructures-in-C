@@ -61,13 +61,6 @@ void removeLastNode(struct Node* head) {
     free(head);
 }
 
-void printList(const struct Node* node) {
-    while (node != NULL) {
-        printf("%d", node->value);
-        node = node->next;
-    }
-}
-
 const struct Node* insertAt(struct Node* node, const int value, const int index) {
     if (index < 0) return nullptr;
     if (node == NULL) return nullptr;
@@ -102,17 +95,4 @@ struct Node* removeAt(struct Node* head, const int index) {
 
     free(nodeToRemove);
     return head;
-}
-
-
-int main() {
-    struct Node* node = createNode(1);
-    add(node, 2);
-    add(node, 3);
-    add(node, 4);
-    add(node, 5);
-    printList(node);
-    printf("\n");
-    struct Node* newHead = removeAt(node, 0);
-    printList(newHead);
 }
