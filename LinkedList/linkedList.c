@@ -1,6 +1,4 @@
 #include "linkedList.h"
-
-#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -35,7 +33,7 @@ void add(struct Node* head, const int value) {
 }
 
 
-int getValueAtIndex(const struct Node* head, const int index) {
+int getValueAtIndex(struct Node* head, const int index) {
     head = getNodeAtIndex(head, index);
     return head->value;
 }
