@@ -1,5 +1,6 @@
 #include "linkedList.h"
 
+#include <stdio.h>
 #include <stdlib.h>
 
 struct Node* createNode(int value) {
@@ -31,8 +32,4 @@ int atIndex(const struct Node* head, const int index, int* outValue) {
     }
     *outValue = head->value;
     return 0;
-}
-
-
-int main() {
 }

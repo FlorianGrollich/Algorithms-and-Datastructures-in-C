@@ -14,10 +14,10 @@ void add(struct Node* head, int value);
 
 void removeAt(struct Node head, int index);
 
-void remove(struct Node head);
+void removeNode(struct Node head);
 
 int size(struct Node head);
 
-int atIndex(struct Node* head, int index, int* outValue);
+int atIndex(const struct Node* head, int index, int* outValue);
 
 #endif //LINKEDLIST_H
