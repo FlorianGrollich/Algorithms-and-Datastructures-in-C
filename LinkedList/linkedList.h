@@ -15,7 +15,7 @@ const struct Node* insertAt(struct Node* node, const int value, const int index)
 
 void add(struct Node* head, int value);
 
-void removeAt(struct Node head, int index);
+struct Node* removeAt(struct Node* head, int index);
 
 void removeLastNode(struct Node* head);
 

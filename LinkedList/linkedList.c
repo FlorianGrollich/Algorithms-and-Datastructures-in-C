@@ -87,6 +87,24 @@ const struct Node* insertAt(struct Node* node, const int value, const int index)
     return node;
 }
 
+
+struct Node* removeAt(struct Node* head, const int index) {
+    if (index < 0) return nullptr;
+    if (index == 0) {
+        struct Node* newHead = head->next;
+        free(head);
+        return newHead;
+    }
+
+    struct Node* before = getNodeAtIndex(head, index - 1);
+    struct Node* nodeToRemove = before->next;
+    before->next = nodeToRemove->next;
+
+    free(nodeToRemove);
+    return head;
+}
+
+
 int main() {
     struct Node* node = createNode(1);
     add(node, 2);
@@ -95,6 +113,6 @@ int main() {
     add(node, 5);
     printList(node);
     printf("\n");
-    insertAt(node, 8, 0);
-    printList(node);
+    struct Node* newHead = removeAt(node, 0);
+    printList(newHead);
 }
