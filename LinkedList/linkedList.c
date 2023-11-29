@@ -3,6 +3,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+const struct Node* getNodeAtIndex(const struct Node* head, const int index) {
+    for (int i = 0; i < index; i++) {
+        if (head->next == NULL) {
+            return nullptr;
+        }
+        head = head->next;
+    }
+    return head;
+}
+
+
 struct Node* createNode(int value) {
     struct Node* newNode = malloc(sizeof(struct Node));
     newNode->value = value;
@@ -23,15 +35,9 @@ void add(struct Node* head, const int value) {
 }
 
 
-int atIndex(const struct Node* head, const int index, int* outValue) {
-    for (int i = 0; i < index; i++) {
-        if (head->next == NULL) {
-            return -1; // error
-        }
-        head = head->next;
-    }
-    *outValue = head->value;
-    return 0;
+int getValueAtIndex(const struct Node* head, const int index) {
+    head = getNodeAtIndex(head, index);
+    return head->value;
 }
 
 int size(const struct Node* head) {
@@ -43,8 +49,8 @@ int size(const struct Node* head) {
     return count;
 }
 
-void removeNode(struct Node* head) {
-    if(head == NULL) return;
+void removeLastNode(struct Node* head) {
+    if (head == NULL) return;
 
     struct Node* tmp = head;
     while (head->next != NULL) {
@@ -56,16 +62,16 @@ void removeNode(struct Node* head) {
 }
 
 void printList(const struct Node* node) {
-    if(node == NULL) return;
-    for (int i = 0; i < size(node); i++) {
-        int outValue;
-        atIndex(node, i, &outValue);
-        printf("%d", outValue);
+    while (node != NULL) {
+        printf("%d", node->value);
+        node = node->next;
     }
 }
-
 int main() {
     struct Node* node = createNode(1);
-    removeNode(node);
-    //printList(node);
+    add(node, 4);
+    add(node, 4);
+    add(node, 4);
+    add(node, 4);
+    printList(node);
 }

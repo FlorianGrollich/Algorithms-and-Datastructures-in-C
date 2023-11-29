@@ -9,16 +9,17 @@ struct Node {
 
 struct Node* createNode(int value);
 
+const struct Node* getNodeAtIndex(const struct Node* head, const int index);
+
 void insertAt(struct Node head, int value, int index);
 
 void add(struct Node* head, int value);
 
 void removeAt(struct Node head, int index);
 
-void removeNode(struct Node* head);
+void removeLastNode(struct Node* head);
 
 int size(const struct Node* head);
 
-int atIndex(const struct Node* head, int index, int* outValue);
 
 #endif //LINKEDLIST_H
