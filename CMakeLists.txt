@@ -12,6 +12,4 @@ add_executable(AlgoData
         LinkedList/linkedList.c
         LinkedList/linkedList.h
         LinkedList/linkedList.h
-        ArrayList.c
-        ArrayList.h
 )
